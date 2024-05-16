@@ -1,16 +1,16 @@
 import React from 'react'; 
 import { View, ImageBackground, Text, Button } from 'react-native';
-import Default from '../styles/Default';
+import Default from '../../styles/Default';
 
-export default function WelcomeScreen({ navigation }: any) { // Extraia navigation das props aqui
+export default function WelcomeScreen({ navigation }: any) { 
 
   const secScreen = () => {
-    navigation.navigate('Login'); // Navegue para a tela de Login
+    navigation.navigate('Login'); 
   }
   
   return (
     <ImageBackground 
-      source={require('../assets/images/4964195.jpg')} 
+      source={require('../../assets/images/4964195.jpg')} 
       style={Default.ImgBackground}
       resizeMode='cover'
     >

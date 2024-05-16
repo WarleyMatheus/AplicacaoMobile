@@ -1,16 +1,16 @@
 import React, {Component} from "react";
-import { StyleSheet, Text, View } from "react-native";
-import WelcomeScreen from "./screens/WelcomeScreen";
 import Default from "./styles/Default";
+import MyNavigator from "./components/MyNavigator";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default class App extends Component {
   render(){
 
     return (
 
-      <View style={Default.container}>
-        <WelcomeScreen />
-      </View>
+      <NavigationContainer>
+        <MyNavigator></MyNavigator>
+      </NavigationContainer>
       
     )
   }
