@@ -1,4 +1,6 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
+
+const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
     ex: {
@@ -13,5 +15,18 @@ export default StyleSheet.create({
 
     bigText: {
         fontSize: 32
-    }
+    },
+    Text: {
+        fontSize: 30,
+        color: '#000000'
+      },
+      ImgBackground: {
+        width: width,
+        height: height
+      },
+      container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+      }
 })
