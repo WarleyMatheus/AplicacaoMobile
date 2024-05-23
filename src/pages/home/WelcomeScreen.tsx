@@ -5,7 +5,11 @@ import Default from '../../styles/Default';
 export default function WelcomeScreen({ navigation }: any) { 
 
   const secScreen = () => {
-    navigation.navigate('Login'); 
+    navigation.navigate('Login')
+    navigation.reset({
+      index: 0,
+      routes: [{name: 'Login'}]
+    })
   }
   
   return (
@@ -14,7 +18,7 @@ export default function WelcomeScreen({ navigation }: any) {
       style={Default.ImgBackground}
       resizeMode='cover'
     >
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View style={Default.testView}>
         <Text style={Default.Text}> Olá mundo! {"\n"} </Text>
         <Button
           title='Get Started'
