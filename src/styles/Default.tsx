@@ -1,32 +1,36 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { Dimensions, StyleSheet} from "react-native";
 
 const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
-  ex: {
-    paddingHorizontal: 15,
-    marginVertical: 5,
-    borderRadius: 10,
-    borderWidth: 2,
-    borderColor: '#222',
-    fontSize: 24,
-    fontWeight: 'bold'
+
+  pressable: {
+    fontSize: 15,
+    textAlign: 'right',
+    color: '#2A58F2'
   },
   bigText: {
-    fontSize: 32
-  },
-  Text: {
-    fontSize: 30,
+    fontSize: 32,
     color: '#000000'
+  },
+  InitialText: {
+    fontSize: 21,
+    color: '#000000',
+    alignContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center'
+  },
+  InitialText2: {
+    fontSize: 20,
+    color: '#000000',
+    alignContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    bottom: 75
   },
   ImgBackground: {
     width: width,
     height: height,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -38,38 +42,61 @@ export default StyleSheet.create({
     fontSize: 20,
     width: width * 0.75
   },
-  testView: {
+  basicView: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
   },
-  clock: {
-    width: 300,
-    height: 300,
-    borderRadius: 150,
-    borderColor: 'black',
-    borderWidth: 2,
+  input: {
+    marginTop: 10,
+    marginBottom: 10,
+    fontSize: 15,
+    borderWidth: 1,
+    borderColor: '#000000',
+    borderRadius: 15,
+    width: width*0.65,
+    height: 50,
+    maxWidth: 300,
+    color: '#000'
+  },
+  inputArea: {
+    marginTop: 10,
+    marginBottom: 10,
+    fontSize: 15,
+    borderWidth: 1,
+    borderColor: '#000000',
+    borderRadius: 15,
+    width: width*0.65,
+    height: 50,
+    maxWidth: 300,
+    color: '#000',
+    flexDirection: 'row'
+  },
+  inputPreText: {
+    textAlign: 'left',
+    color: '#000'
+  },
+  container: {
+    flex: 1,
     alignItems: 'center',
+    justifyContent: 'center'
+  },
+  buttonStyle: {
+    top: width*0.5,
+    backgroundColor: 'blue',
+    height: 40,
+    width: 200,
+    borderRadius: 10,
+  },
+  buttonText: {
+    textAlign: 'center',
     justifyContent: 'center',
+    color: '#FFF',
+    fontSize: 24
   },
-  hand: {
-    position: 'absolute',
-    bottom: '50%',
-    backgroundColor: 'black',
-    borderRadius: 5,
-  },
-  hourHand: {
-    width: 10,
-    height: '35%',
-  },
-  minuteHand: {
-    width: 8,
-    height: '40%',
-  },
-  secondHand: {
-    width: 4,
-    height: '45%',
-    backgroundColor: 'rgb(0, 225, 255)',
+  onRowButton: {
+    top: width*0.525,
+    flexDirection: 'row'
   }
 })

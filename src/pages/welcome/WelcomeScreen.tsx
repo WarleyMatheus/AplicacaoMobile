@@ -18,8 +18,14 @@ export default function WelcomeScreen({ navigation }: any) {
       style={Default.ImgBackground}
       resizeMode='cover'
     >
-      <View style={Default.testView}>
-        <Text style={Default.Text}> Olá mundo! {"\n"} </Text>
+      <View style={Default.basicView}>
+        <Text style={Default.bigText}>
+          Olá! {"\n"}
+        </Text> 
+        <Text style={Default.InitialText}>
+          Esta é uma aplicação desenvolvida para fins de atividades laborais. {"\n"}
+          É expressamente proibida distribuição, revenda ou utilização não autorizada. {"\n"}  
+        </Text>
         <Button
           title='Get Started'
           onPress={secScreen}
