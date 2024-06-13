@@ -1,5 +1,8 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Atenção!
+>**Nota:** O aplicativo foi desenvolvido utilizando react-native e demais tecnologias correlatas. Para uso, atente-se as normas abaixo e, em caso de dúvidas, entre em contato com mwarley35@gmail.com
+
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
